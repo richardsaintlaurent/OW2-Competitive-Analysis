@@ -1,8 +1,0 @@
----
-title: "OW2 Competitive Data Analysis"
----
-
-**Last updated:**
-```{r echo=FALSE, warning=FALSE, message = FALSE}
-Sys.time()
-```
