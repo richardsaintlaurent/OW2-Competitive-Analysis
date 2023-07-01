@@ -11,7 +11,7 @@
 
 
 
-<title>ondine</title>
+<title>Basil (smurf)</title>
 
 <script src="site_libs/header-attrs-2.22/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -265,7 +265,7 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">ondine</h1>
+<h1 class="title toc-ignore">Basil (smurf)</h1>
 
 </div>
 
@@ -273,31 +273,30 @@ $(document).ready(function () {
 <strong>Role summary</strong>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["Role"],"name":[1],"type":["chr"],"align":["left"]},{"label":["GamesPlayed"],"name":[2],"type":["int"],"align":["right"]},{"label":["Winrate"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["Enjoyment"],"name":[4],"type":["dbl"],"align":["right"]}],"data":[{"1":"DPS","2":"27","3":"0.59","4":"2.43"},{"1":"Support","2":"12","3":"0.38","4":"1.92"},{"1":"Tank","2":"49","3":"0.59","4":"2.29"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+{"columns":[{"label":["Role"],"name":[1],"type":["chr"],"align":["left"]},{"label":["GamesPlayed"],"name":[2],"type":["int"],"align":["right"]},{"label":["Winrate"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["Enjoyment"],"name":[4],"type":["dbl"],"align":["right"]}],"data":[{"1":"DPS","2":"33","3":"0.61","4":"2.93"},{"1":"Support","2":"16","3":"0.62","4":"3.22"},{"1":"Tank","2":"4","3":"0.25","4":"2.12"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
 <strong>Map type summary</strong>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["MapType"],"name":[1],"type":["chr"],"align":["left"]},{"label":["GamesPlayed"],"name":[2],"type":["int"],"align":["right"]},{"label":["Winrate"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["Enjoyment"],"name":[4],"type":["dbl"],"align":["right"]}],"data":[{"1":"Push","2":"14","3":"0.71","4":"2.39"},{"1":"Control","2":"14","3":"0.64","4":"2.43"},{"1":"Payload","2":"30","3":"0.60","4":"2.38"},{"1":"Hybrid","2":"30","3":"0.42","4":"2.05"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+{"columns":[{"label":["MapType"],"name":[1],"type":["chr"],"align":["left"]},{"label":["GamesPlayed"],"name":[2],"type":["int"],"align":["right"]},{"label":["Winrate"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["Enjoyment"],"name":[4],"type":["dbl"],"align":["right"]}],"data":[{"1":"Control","2":"13","3":"0.69","4":"3.39"},{"1":"Payload","2":"19","3":"0.58","4":"2.79"},{"1":"Hybrid","2":"16","3":"0.56","4":"2.78"},{"1":"Push","2":"5","3":"0.40","4":"3.00"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
 <p><strong>Map Rankings</strong>
-<img src="CompAnalysis_ondine_files/figure-html/unnamed-chunk-5-1.png" width="960" /></p>
+<img src="CompAnalysis_Basil_files/figure-html/unnamed-chunk-5-1.png" width="960" /></p>
 <p><strong>Enjoyment &amp; Result Bias</strong><br />
 Winrate and enjoyment are strongly correlated
-<img src="CompAnalysis_ondine_files/figure-html/unnamed-chunk-6-1.png" width="960" /><img src="CompAnalysis_ondine_files/figure-html/unnamed-chunk-6-2.png" width="960" /></p>
+<img src="CompAnalysis_Basil_files/figure-html/unnamed-chunk-6-1.png" width="960" /><img src="CompAnalysis_Basil_files/figure-html/unnamed-chunk-6-2.png" width="960" /></p>
 <p><strong>Variability throughout the week</strong>
-<img src="CompAnalysis_ondine_files/figure-html/unnamed-chunk-7-1.png" width="960" /></p>
+<img src="CompAnalysis_Basil_files/figure-html/unnamed-chunk-7-1.png" width="960" /></p>
 <p><strong>Does winrate vary throughout the week?</strong></p>
 <pre><code>## Analysis of Deviance Table (Type II tests)
 ## 
 ## Response: cbind(Win, Loss)
 ##         LR Chisq Df Pr(&gt;Chisq)
-## Weekday   1.3839  3     0.7093</code></pre>
-<p><strong>Flex queue: Role probability throughout the week</strong>
-<img src="CompAnalysis_ondine_files/figure-html/unnamed-chunk-9-1.png" width="960" /></p>
-<p><img src="CompAnalysis_ondine_files/figure-html/unnamed-chunk-10-1.png" width="960" /></p>
+## Weekday   3.0414  4     0.5509</code></pre>
+<p><strong>Flex queue: Role probability throughout the week</strong></p>
+<p><img src="CompAnalysis_Basil_files/figure-html/unnamed-chunk-10-1.png" width="960" /></p>
 <p><strong>Does winrate vary between time of day?</strong><br />
 Morning: 8AM &lt;= Time &lt; 12PM<br />
 Afternoon: 12PM &lt;= Time &lt; 5PM<br />
@@ -307,15 +306,13 @@ Night: 12AM &lt;= Time &lt; 8AM<br />
 <pre><code>## Analysis of Deviance Table (Type II tests)
 ## 
 ## Response: cbind(Won, Lost)
-##             LR Chisq Df Pr(&gt;Chisq)  
-## TimeBracket   3.7389  1    0.05316 .
-## ---
-## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+##             LR Chisq Df Pr(&gt;Chisq)
+## TimeBracket   1.4553  2      0.483</code></pre>
 <p><strong>Lobby Rank vs Actual Rank</strong><br />
 Rank disparity is calculated from (ActualRank - LobbyRank)<br />
 Therefore, positive disparity is Favoured, negative disparity is
 Underdog<br />
-<img src="CompAnalysis_ondine_files/figure-html/unnamed-chunk-12-1.png" width="960" /></p>
+<img src="CompAnalysis_Basil_files/figure-html/unnamed-chunk-12-1.png" width="960" /></p>
 <p><strong>Lobby Summary</strong><br />
 A “streak” is defined by 3 consecutive wins or losses.<br />
 If you queue when you’re on a streak, what are the quality of the
@@ -329,26 +326,14 @@ LossStreak_n = Number of games played while on a loss streak<br />
 
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["Condition"],"name":[1],"type":["chr"],"align":["left"]},{"label":["Winrate"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["Enjoyment"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["GamesPlayed"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["WinStreak_n"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["LossStreak_n"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["%WinStreak"],"name":[7],"type":["dbl"],"align":["right"]},{"label":["%LossStreak"],"name":[8],"type":["dbl"],"align":["right"]}],"data":[{"1":"Favoured","2":"35.29","3":"1.76","4":"17","5":"2","6":"2","7":"14.29","8":"40"},{"1":"Underdog","2":"55.17","3":"2.26","4":"29","5":"6","6":"2","7":"42.86","8":"40"},{"1":"Exact","2":"63.33","3":"2.48","4":"30","5":"6","6":"1","7":"42.86","8":"20"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
-  </script>
-</div>
-<strong>Cat diff</strong>
-<div data-pagedtable="false">
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":["Cat.within.3ft..Proximity"],"name":[1],"type":["chr"],"align":["left"]},{"label":["Winrate"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["Enjoyment"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["GamesPlayed"],"name":[4],"type":["dbl"],"align":["right"]}],"data":[{"1":"N","2":"57.69","3":"2.42","4":"52"},{"1":"Y","2":"62.50","3":"2.19","4":"8"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
-  </script>
-</div>
-<strong>Weed diff</strong>
-<div data-pagedtable="false">
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":["Weed."],"name":[1],"type":["chr"],"align":["left"]},{"label":["Winrate"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["Enjoyment"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["GamesPlayed"],"name":[4],"type":["dbl"],"align":["right"]}],"data":[{"1":"Y","2":"42.86","3":"2.50","4":"14"},{"1":"N","2":"61.90","3":"2.36","4":"21"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+{"columns":[{"label":["Condition"],"name":[1],"type":["chr"],"align":["left"]},{"label":["Winrate"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["Enjoyment"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["GamesPlayed"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["WinStreak_n"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["LossStreak_n"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["%WinStreak"],"name":[7],"type":["dbl"],"align":["right"]},{"label":["%LossStreak"],"name":[8],"type":["dbl"],"align":["right"]}],"data":[{"1":"Favoured","2":"54.17","3":"2.92","4":"24","5":"3","6":"1","7":"33.33","8":"50"},{"1":"Underdog","2":"69.23","3":"3.38","4":"13","5":"5","6":"1","7":"55.56","8":"50"},{"1":"Exact","2":"71.43","3":"3.14","4":"7","5":"1","6":"0","7":"11.11","8":"0"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
 <p><strong>Rank over time</strong><br />
 A “tour” is in reference to the win-loss record in-game, where either 5
 wins or 15 losses are needed to readjust rank<br />
 Example: Tour 4.12 means Season 4, tour 12
-<img src="CompAnalysis_ondine_files/figure-html/unnamed-chunk-17-1.png" width="960" /><img src="CompAnalysis_ondine_files/figure-html/unnamed-chunk-17-2.png" width="960" /><img src="CompAnalysis_ondine_files/figure-html/unnamed-chunk-17-3.png" width="960" /></p>
+<img src="CompAnalysis_Basil_files/figure-html/unnamed-chunk-15-1.png" width="960" /><img src="CompAnalysis_Basil_files/figure-html/unnamed-chunk-15-2.png" width="960" /><img src="CompAnalysis_Basil_files/figure-html/unnamed-chunk-15-3.png" width="960" /></p>
 
 
 
