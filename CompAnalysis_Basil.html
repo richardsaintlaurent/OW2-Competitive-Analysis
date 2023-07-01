@@ -283,12 +283,12 @@ $(document).ready(function () {
   </script>
 </div>
 <p><strong>Map Rankings</strong>
-<img src="CompAnalysis_Basil_files/figure-html/unnamed-chunk-5-1.png" width="960" /></p>
+<img src="CompAnalysis_Basil_files/figure-html/unnamed-chunk-19-1.png" width="960" /></p>
 <p><strong>Enjoyment &amp; Result Bias</strong><br />
 Winrate and enjoyment are strongly correlated
-<img src="CompAnalysis_Basil_files/figure-html/unnamed-chunk-6-1.png" width="960" /><img src="CompAnalysis_Basil_files/figure-html/unnamed-chunk-6-2.png" width="960" /></p>
+<img src="CompAnalysis_Basil_files/figure-html/unnamed-chunk-20-1.png" width="960" /><img src="CompAnalysis_Basil_files/figure-html/unnamed-chunk-20-2.png" width="960" /></p>
 <p><strong>Variability throughout the week</strong>
-<img src="CompAnalysis_Basil_files/figure-html/unnamed-chunk-7-1.png" width="960" /></p>
+<img src="CompAnalysis_Basil_files/figure-html/unnamed-chunk-21-1.png" width="960" /></p>
 <p><strong>Does winrate vary throughout the week?</strong></p>
 <pre><code>## Analysis of Deviance Table (Type II tests)
 ## 
@@ -296,7 +296,7 @@ Winrate and enjoyment are strongly correlated
 ##         LR Chisq Df Pr(&gt;Chisq)
 ## Weekday   3.0414  4     0.5509</code></pre>
 <p><strong>Flex queue: Role probability throughout the week</strong></p>
-<p><img src="CompAnalysis_Basil_files/figure-html/unnamed-chunk-10-1.png" width="960" /></p>
+<p><img src="CompAnalysis_Basil_files/figure-html/unnamed-chunk-24-1.png" width="960" /></p>
 <p><strong>Does winrate vary between time of day?</strong><br />
 Morning: 8AM &lt;= Time &lt; 12PM<br />
 Afternoon: 12PM &lt;= Time &lt; 5PM<br />
@@ -312,7 +312,7 @@ Night: 12AM &lt;= Time &lt; 8AM<br />
 Rank disparity is calculated from (ActualRank - LobbyRank)<br />
 Therefore, positive disparity is Favoured, negative disparity is
 Underdog<br />
-<img src="CompAnalysis_Basil_files/figure-html/unnamed-chunk-12-1.png" width="960" /></p>
+<img src="CompAnalysis_Basil_files/figure-html/unnamed-chunk-26-1.png" width="960" /></p>
 <p><strong>Lobby Summary</strong><br />
 A “streak” is defined by 3 consecutive wins or losses.<br />
 If you queue when you’re on a streak, what are the quality of the
@@ -326,14 +326,14 @@ LossStreak_n = Number of games played while on a loss streak<br />
 
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["Condition"],"name":[1],"type":["chr"],"align":["left"]},{"label":["Winrate"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["Enjoyment"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["GamesPlayed"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["WinStreak_n"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["LossStreak_n"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["%WinStreak"],"name":[7],"type":["dbl"],"align":["right"]},{"label":["%LossStreak"],"name":[8],"type":["dbl"],"align":["right"]}],"data":[{"1":"Favoured","2":"54.17","3":"2.92","4":"24","5":"3","6":"1","7":"33.33","8":"50"},{"1":"Underdog","2":"69.23","3":"3.38","4":"13","5":"5","6":"1","7":"55.56","8":"50"},{"1":"Exact","2":"71.43","3":"3.14","4":"7","5":"1","6":"0","7":"11.11","8":"0"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+{"columns":[{"label":["Condition"],"name":[1],"type":["chr"],"align":["left"]},{"label":["Winrate"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["Enjoyment"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["GamesPlayed"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["WinStreak_n"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["LossStreak_n"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["%WinStreak"],"name":[7],"type":["dbl"],"align":["right"]},{"label":["%LossStreak"],"name":[8],"type":["dbl"],"align":["right"]}],"data":[{"1":"Favoured","2":"54.17","3":"2.92","4":"24","5":"3","6":"1","7":"42.86","8":"100"},{"1":"Exact","2":"66.67","3":"3.17","4":"6","5":"1","6":"0","7":"14.29","8":"0"},{"1":"Underdog","2":"75.00","3":"3.12","4":"4","5":"3","6":"0","7":"42.86","8":"0"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
 <p><strong>Rank over time</strong><br />
 A “tour” is in reference to the win-loss record in-game, where either 5
 wins or 15 losses are needed to readjust rank<br />
 Example: Tour 4.12 means Season 4, tour 12
-<img src="CompAnalysis_Basil_files/figure-html/unnamed-chunk-15-1.png" width="960" /><img src="CompAnalysis_Basil_files/figure-html/unnamed-chunk-15-2.png" width="960" /><img src="CompAnalysis_Basil_files/figure-html/unnamed-chunk-15-3.png" width="960" /></p>
+<img src="CompAnalysis_Basil_files/figure-html/unnamed-chunk-29-1.png" width="960" /><img src="CompAnalysis_Basil_files/figure-html/unnamed-chunk-29-2.png" width="960" /><img src="CompAnalysis_Basil_files/figure-html/unnamed-chunk-29-3.png" width="960" /></p>
 
 
 
